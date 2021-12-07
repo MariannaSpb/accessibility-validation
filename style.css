@@ -38,6 +38,7 @@ p, li {
     font-weight: 300;
     --color-white: #fff;
     --color-yellow: #fcee0a;
+    --color-black: #000; 
     /* --color-blue: #02d8f3; */
     --color-red: #CC0200;
 }
@@ -53,17 +54,6 @@ p, li {
     text-shadow: none;
 }
 
-.slide h2, .caption h1 {
-    display: inline-block;
-    font-family: "PT Sans", sans-serif; 
-    /* 'IBM Plex Sans Thai Looped', sans-serif; */
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-    color: var(--color-white);
-    text-align: center;
-}
 
 .content {
     grid-template-columns: 1fr 1fr;
@@ -82,6 +72,12 @@ ul li {
 }
 .slide h2 {
     margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--color-white);
+    text-align: center;
 }
 
 .content img {
@@ -141,9 +137,10 @@ ul li {
 
 
 .slide {
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--color-black);
+    /* background: #0F2027;  fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #2C5364, #203A43, #0F2027); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .slide.last{
@@ -232,4 +229,3 @@ ul li {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
