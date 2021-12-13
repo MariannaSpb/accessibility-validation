@@ -47,6 +47,7 @@ p, li {
 
 .shower.list {
     background: var(--color-white);
+    background: #FFEEEE;  
 }
 
 .caption {
@@ -99,7 +100,6 @@ ul li {
 }
 
 .slide a {
-    /* color: var(--color-red); */
     font-size: 32px;
     font-family: "PT Sans", sans-serif;
     font-weight: 600;
@@ -138,9 +138,6 @@ ul li {
 
 .slide {
     background: var(--color-black);
-    /* background: #0F2027;  fallback for old browsers */
-    /* background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  Chrome 10-25, Safari 5.1-6 */
-    /* background: linear-gradient(to right, #2C5364, #203A43, #0F2027); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .slide.last{
@@ -168,7 +165,6 @@ ul li {
 
 .slide .center {
     margin: 0 auto;
-    margin-top: 150px;
     display: block;
 }
 
@@ -178,6 +174,9 @@ ul li {
 
 .top {
     margin-top: 40px;
+}
+.bottom {
+    margin-bottom: 40px;
 }
 .about {
     background: linear-gradient(to right, #16222a, #3a6073);
@@ -229,3 +228,43 @@ ul li {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.container {
+    display: flex;
+}
+.container h3 {
+    color: var(--color-white);
+}
+
+.container p {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.slide .container div>p::before {
+    color: #fff;
+    content: '◼︎'
+}
+
+.solution {
+    margin-right: 15px;
+    color: var(--color-red);
+}
+
+.disabled {
+    display: block;
+    border-radius: 40px;
+    color: gray;
+    height: 200px;
+    background: #d2d2d2;
+    border: 3px solid darkgrey;
+    font-size: 48px;
+    margin-top: 150px;
+    width: 600px;
+}
+
+.small {
+    font-size: 16px;
+    color: #8CC5E2;
+}
+
