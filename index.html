@@ -42,10 +42,10 @@
     </section>
     <section class="slide">
         <h2>план:</h2>
-        <p>Что такое доступность в вебе</p>
-        <p>Мифы</p>
-        <p>Барьеры в использовании форм</p>
-        <p>Решение</p>
+        <p>- Что такое доступность в вебе</p>
+        <p>- Стереотипы</p>
+        <p>- Барьеры в использовании форм</p>
+        <p>- Решение</p>
     </section>
     <section class="slide bg" style="background-image: url(images/img-721-1571554782.jpeg)">
         <h2  class="center left">Web Accessibility</h2>
@@ -53,73 +53,150 @@
         </div>
     </section>
     <section class="slide">
-        <h2 class="center">Форма&nbsp;&mdash; важная часть приложения</h2>
-        <!-- <div class="description form-container">
+        <h2>Фронтенд?</h2>
+        <h2 style="margin-top: 50px">Не только!</h2>
+    </section>
+    <section class="slide">
+        <h2>Доступность это про слепых?</h2>
+        <section class="container">
+            <div>
+                <h3>Временные ситуации недоступности:</h3>                  
+                <p>неправильный поворот экрана</p>
+                <p>не работает мышка (нельзя использовать только навигацию по клавиатуре)</p>
+                <p>сайт только десктопный—  с телефона с маленьким экраном пользоваться неудобно</p>
+                <p>низкий онтраст цветов</p>
+                <p>медленный интернет</p>
+            </div>
+            <div>
+                <h3>Физиологические особенности:</h3>
+                <p>нарушение зрения</p>
+                <p>нарушение слуха</p>
+                <p>нарушение моторики</p>
+                <p>нарушение восприятия</p>
+                <p>преклонный возраст</p>
+            </div>
+        </section>
+    </section>
+    <section class="slide">
+        <h2>screen readers</h2>
+        <img src="images/sr.png" width="900" height="300" alt="screen reader">
+    </section>
+    <section class="slide">
+        <h2 style="margin-top: 0; margin-bottom: 30px;" class="center">Форма&nbsp;&mdash; важная часть приложения</h2>
+        <div class="description form-container">
             <img src="images/form-1.png" width="250" height="200" alt="форма авторизации">
             <img src="images/form-2.png" width="250" height="200" alt="форма обратного звонка">
             <img src="images/form-3.png" width="250" height="200" alt="форма регистрации на вебинар">
             <img src="images/form-4.png" width="250" height="250" alt="форма обратной связи">
-        </div> -->
+        </div>
     </section>
     <section class="slide">
         <h2>ПРОБЛЕМЫ:</h2>
         <ul>
             <li class="next">Required поля</li>
             <li class="next">Плейсхолдеры вместо подписи к полям </li>
-            <li class="next">Сообщения об ошибках  не доступны скринридеру</li>
+            <li class="next">Задизейбленные кнопки</li>
+            <li class="next">Сообщения об ошибках не доступны скринридеру</li>
         </ul>
-        <p></p>
     </section>
     <section class="slide">
-        <!-- <h2> Bug №1: Обязательные поля </h2> -->
         <h2 class="center">Обязательные поля*</h2>
         <p class="center" style="margin-top: 20px; text-align: center;">обязательное поле стар</p>
-        <!-- <div class="description">
-            <img src="images/required-bad.png" width="800" height="400" alt="форма без указания обязательных полей">
-        </div> -->
-    </section>
-    <section class="slide">
-        <h2> Решение: </h2>
-        <!-- <div class="description flex">
-            <img src="images/required.png" width="400" height="200" alt="форма с указанием обязательных полей">
-            <p>Или <strong>"required"</strong> /</br> <strong>"aria-required" = true</strong> в HTML</p>
-        </div> -->
-    </section>
-    <section class="slide">
-        <h2 class="center">Placeholder is not a &lt;label&gt;</h2>
-        <!-- <h2>Bug №2: Отсутствие видимых меток к полям</h2>
         <div class="description">
-            <img src="images/no-label2.png" width="800" height="350" alt="форма без подписи к полям">
+            <img src="images/star-form.png" width="800" alt="форма">
         </div>
-        <p>Placeholder is not a label </p> -->
     </section>
     <section class="slide">
-        <h2> Решение: </h2>
-        <!-- <div class="description">
-            <img src="images/label.png" width="800" height="400" alt="форма с подписями к полям">
-        </div> -->
+        <h2> <span class="solution">Решение №1:</span>добавить явную подпись</h2>
+        <img src="images/required-field.png" width="800" alt="форма">
+    </section>
+    <section class="slide">
+        <h2> <span class="solution">Решение №2:</span>добавить атрибут required в разметке
+        </h2>
+        <img src="images/req-atttr.png" width="1000" height="200" alt="форма">
+    </section>
+    <section class="slide">
+        <h2> <span class="solution">Решение №3:</span>использовать ARIA
+        </h2>
+        <img src="images/hidden.png" width="800" height="100" alt="форма">
+        <img src="images/star-form.png" width="600" height="200" alt="форма">
+        <p class="small">ARIA — это стандарт, состоящий из набора специальных ролей и атрибутов, которые добавляются в разметку и расширяют или дополняют функции стандартных HTML-элементов.</p>
+    </section>
+    <section class="slide">
+        <h2 style="margin-bottom: 50px" class="center">Placeholder is not a &lt;label&gt;</h2>
+        <img src="images/placeholder.png" width="800" height="350" alt="форма без подписи к полям">
+    </section>
+    <section class="slide">
+        <h2> <span class="solution">Решение:</span> </h2>
+        <div class="description">
+            <img src="images/visible-label.png" width="800" height="400" alt="форма с подписями к полям">
+        </div>
+    </section>
+    <section class="slide">
+        <h2 style="margin-bottom: 50px" class="center">Задизейбленные кнопки</h2>
+        <button class="disabled description" disabled>
+            BUTTON
+        </button>
+    </section>
+    <section class="slide">
+        <h2 class="center" style="margin-bottom: 50px">Задизейбленные кнопки</h2>
+          <div class="description">
+            <img style="margin-top: 17px" src="images/postbank.png" width="700" height="300" alt="форма с отключеной кнопкой">
+        </div>
+    </section>
+    <section class="slide">
+        <h2 class="center" style="margin-bottom: 50px">Задизейбленные кнопки</h2>
+          <div class="description">
+            <img style="margin-top: 17px" src="images/disabled.png" width="400" height="300" alt="форма с отключеной кнопкой">
+            <img style="margin-top: 17px" src="images/enable.png" width="400" height="300" alt="форма с включенной кнопкой">margin-bottom: 17px;
+        </div>
+    </section>
+    <section class="slide">
+        <h2> <span class="solution">Решение №1:</span>не отключать кнопки</h2>
+        <div class="description">
+            <img src="images/ebay.png" width="800" height="400" alt="форма">
+        </div>
+    </section>
+    <section class="slide">
+        <h2> <span class="solution">Решение №2:</span>добавить подсказку</h2>
+        <div class="description flex">
+            <img src="images/before.png" width="400" height="200" alt="форма">
+            <img src="images/afterpng.png" width="400" height="200" alt="форма">
+        </div>
+        </div>
     </section>
     <section class="slide">
         <h2 class="center"> Недоступные сообщения об ошибках</h2> 
-        <!-- <h2> Bug №3: Недоступные сообщения об ошибках</h2>  -->
-        <!-- <div class="description">
+        <div class="description">
             <img src="images/validation.png" width="600" height="350" alt="">
-        </div> -->
+        </div>
     </section>
     <section class="slide">
+        <h2> <span class="solution">Решение:</span> </h2>
         <h2 class="center">Aria-live = "polite"</h2>
+        <div class="description top">
+            <img src="images/error2.png" width="800" height="200" alt="">
+        </div>
     </section>
     <section class="slide">
-        <h2> Решение: </h2>
-        <!-- <div class="description">
-            <img src="images/label.png" width="800" height="400" alt="форма с подписями к полям">
-        </div> -->
+        <h2> <span class="solution">Решение:</span> </h2>
+        <div class="description">
+            <img src="images/sr-status.png" width="800" height="400" alt="форма с подписями к полям">
+        </div>
+    </section>
+    <section class="slide">
+        <h2> Подведём итоги: </h2>
+        <ul>
+            <li class="next">Звёздочка - не единственный указатель на обязательное поле</li>
+            <li class="next">Плейсхолдер не заменя лейблу</li>
+            <li class="next">Дизейблить кнопки можно, но делать это доступно</li>
+            <li class="next">Об ошибках валидации нужно предупреждать при помощи live region</li>
+        </ul>
     </section>
     <section class="slide winner">
         <h2>Congradulations! <br> Your form has available validation</h2>
         <div class="description top">
             <img src="images/download.png" width="300" height="300" alt="форма авторизации">
-            <!-- <img src="images/5d0641af7263fd5c10d22d05f0f7074e_w200.gif" width="300" height="400" alt="котик"> -->
         </div>
     </section>
     <section class="slide last">
