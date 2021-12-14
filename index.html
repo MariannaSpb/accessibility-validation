@@ -64,8 +64,8 @@
                 <p>неправильный поворот экрана</p>
                 <p>не работает мышка (нельзя использовать только навигацию по клавиатуре)</p>
                 <p>сайт только десктопный—  с телефона с маленьким экраном пользоваться неудобно</p>
-                <p>низкий онтраст цветов</p>
-                <p>медленный интернет</p>
+                <p>низкий контраст цветов</p>
+                <!-- <p>медленный интернет</p> -->
             </div>
             <div>
                 <h3>Физиологические особенности:</h3>
@@ -108,28 +108,31 @@
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение №1:</span>добавить явную подпись</h2>
+        <hr>
         <img src="images/required-field.png" width="800" alt="форма">
     </section>
     <section class="slide">
-        <h2> <span class="solution">Решение №2:</span>добавить атрибут required в разметке
-        </h2>
-        <img src="images/req-atttr.png" width="1000" height="200" alt="форма">
+        <h2> <span class="solution">Решение №2:</span>добавить атрибут required в разметке</h2>
+        <hr>
+        <img src="images/req-atttr.png" width="900" height="150" alt="форма">
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение №3:</span>использовать ARIA
         </h2>
+        <hr>
         <img src="images/hidden.png" width="800" height="100" alt="форма">
         <img src="images/star-form.png" width="600" height="200" alt="форма">
-        <p class="small">ARIA — это стандарт, состоящий из набора специальных ролей и атрибутов, которые добавляются в разметку и расширяют или дополняют функции стандартных HTML-элементов.</p>
+        <p class="small">Accessible Rich Internet Applications или ARIA — это стандарт, состоящий из набора специальных ролей и атрибутов, которые добавляются в разметку и расширяют или дополняют функции стандартных HTML-элементов.</p>
     </section>
     <section class="slide">
         <h2 style="margin-bottom: 50px" class="center">Placeholder is not a &lt;label&gt;</h2>
-        <img src="images/placeholder.png" width="800" height="350" alt="форма без подписи к полям">
+        <img style="margin-left: 150px;" src="images/placeholder.png" width="800" height="350" alt="форма без подписи к полям">
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение:</span> </h2>
+        <hr>
         <div class="description">
-            <img src="images/visible-label.png" width="800" height="400" alt="форма с подписями к полям">
+            <img style="margin-left: 150px;" src="images/visible-label.png" width="800" height="400" alt="форма с подписями к полям">
         </div>
     </section>
     <section class="slide">
@@ -148,17 +151,19 @@
         <h2 class="center" style="margin-bottom: 50px">Задизейбленные кнопки</h2>
           <div class="description">
             <img style="margin-top: 17px" src="images/disabled.png" width="400" height="300" alt="форма с отключеной кнопкой">
-            <img style="margin-top: 17px" src="images/enable.png" width="400" height="300" alt="форма с включенной кнопкой">margin-bottom: 17px;
+            <img style="margin-bottom: 17px" src="images/enable.png" width="400" height="300" alt="форма с включенной кнопкой">margin-bottom: 17px;
         </div>
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение №1:</span>не отключать кнопки</h2>
+        <hr>
         <div class="description">
             <img src="images/ebay.png" width="800" height="400" alt="форма">
         </div>
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение №2:</span>добавить подсказку</h2>
+        <hr>
         <div class="description flex">
             <img src="images/before.png" width="400" height="200" alt="форма">
             <img src="images/afterpng.png" width="400" height="200" alt="форма">
@@ -167,12 +172,14 @@
     </section>
     <section class="slide">
         <h2 class="center"> Недоступные сообщения об ошибках</h2> 
+        <hr>
         <div class="description">
             <img src="images/validation.png" width="600" height="350" alt="">
         </div>
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение:</span> </h2>
+        <hr>
         <h2 class="center">Aria-live = "polite"</h2>
         <div class="description top">
             <img src="images/error2.png" width="800" height="200" alt="">
@@ -180,6 +187,7 @@
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение:</span> </h2>
+        <hr>
         <div class="description">
             <img src="images/sr-status.png" width="800" height="400" alt="форма с подписями к полям">
         </div>
@@ -188,7 +196,7 @@
         <h2> Подведём итоги: </h2>
         <ul>
             <li class="next">Звёздочка - не единственный указатель на обязательное поле</li>
-            <li class="next">Плейсхолдер не заменя лейблу</li>
+            <li class="next">Плейсхолдер не замена лейблу</li>
             <li class="next">Дизейблить кнопки можно, но делать это доступно</li>
             <li class="next">Об ошибках валидации нужно предупреждать при помощи live region</li>
         </ul>
@@ -198,6 +206,16 @@
         <div class="description top">
             <img src="images/download.png" width="300" height="300" alt="форма авторизации">
         </div>
+    </section>
+    <section class="slide">
+        <h2> Полезные материалы: </h2>
+        <ul>
+            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Introduction to Web Accessibility</a></li>
+            <li> <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines</a></li>
+            <li><a href="https://www.youtube.com/watch?v=ssJsjGZE2sc">Людоедский интерфейс, Вадим Макеев</a></li>
+            <li><a href="https://www.smashingmagazine.com/2021/08/frustrating-design-patterns-disabled-buttons/">Frustrating Design Patterns: Disabled Buttons</a> </li>
+            <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks – A First Review of Web Accessibility</a></li>
+        </ul>
     </section>
     <section class="slide last">
         <h2 class="center">СПАСИБО ЗА ВНИМАНИЕ!</h2>
