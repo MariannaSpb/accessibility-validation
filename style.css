@@ -155,12 +155,13 @@ ul li {
     color: red; 
 }
 
+
 .slide .center {
     margin: 0 auto;
     display: block;
-    font-size: 64px;
-    margin-top: 150px;
 }
+
+
 
 .slide.code {
     background: #16181D;
@@ -253,3 +254,7 @@ ul li {
     color: #8CC5E2;
 }
 
+.slide .a11y {
+    font-size: 64px;
+    margin-top: 150px;
+}
