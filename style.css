@@ -128,9 +128,7 @@ ul li {
 
 .slide:first-of-type {
     color:black;
-    background: #EDE574;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--color-black); 
 }
 
 
@@ -140,17 +138,12 @@ ul li {
 }
 
 .slide.last{
-    color:black;
-    background: #EDE574;  
-    background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  
-    background: linear-gradient(to right, #E1F5C4, #EDE574);
+    color:var(--color-white);
+    background: var(--color-black);  
 }
 
 .slide.last h2 {
-    background: linear-gradient(to right, #16222a, #3a6073);
-    color: #1b1b1b;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-white);
 }
 
 
@@ -178,10 +171,7 @@ ul li {
     margin-bottom: 40px;
 }
 .about {
-    background: linear-gradient(to right, #16222a, #3a6073);
-    color: #1b1b1b;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:var(--color-white);
 }
 .slide .contact {
     background: -webkit-linear-gradient(
@@ -191,10 +181,7 @@ ul li {
 }
 
 .slide .header {
-    background: linear-gradient(to right, #16222a, #3a6073);
-    color: #1b1b1b;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-white);
 }
 
 .code-img {
@@ -222,10 +209,7 @@ ul li {
 }
 .social span {
     margin-right: 15px;
-    background: linear-gradient(to right, #16222a, #3a6073);
-    color: #1b1b1b;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-white);
 }
 
 .container {
