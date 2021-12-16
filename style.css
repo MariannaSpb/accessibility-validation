@@ -158,6 +158,8 @@ ul li {
 .slide .center {
     margin: 0 auto;
     display: block;
+    font-size: 64px;
+    margin-top: 150px;
 }
 
 .slide.code {
