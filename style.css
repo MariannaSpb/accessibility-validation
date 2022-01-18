@@ -31,6 +31,7 @@ p, li {
 }
 
 
+
 .shower {
     font-family: "PT Sans", sans-serif;
     font-size: 32px;
@@ -94,8 +95,9 @@ ul li {
 }
 
 .slide ul>li:lang(ru)::before {
-    color: #fff;
-    content: '◼︎'
+    color: red;
+    /* content: '◼︎' */
+    content: "\2713";
 }
 
 .slide a {
@@ -108,15 +110,16 @@ ul li {
     margin: 0 auto;
     text-align: center;
 }
+
+.description a {
+    color: transparent;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
 }
-.form-container {
-    display: flex;
-    grid-gap: 30px;
-    flex-wrap: wrap;
-}
+
 .form-container img {
     margin: auto;
 }
@@ -125,11 +128,11 @@ ul li {
     left: 950px;
 }
 
-
+/* 
 .slide:first-of-type {
     color:black;
     background: var(--color-black); 
-}
+} */
 
 
 
@@ -183,6 +186,12 @@ ul li {
     -webkit-text-fill-color: transparent;
 }
 
+.slide .title {
+    background: linear-gradient(to right, #000046, #1CB5E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .slide .header {
     color: var(--color-white);
 }
@@ -216,7 +225,7 @@ ul li {
 }
 
 .container {
-    display: flex;
+    /* display: flex; */
 }
 .container h3 {
     color: var(--color-white);
@@ -257,4 +266,101 @@ ul li {
 .slide .a11y {
     font-size: 64px;
     margin-top: 150px;
+    text-transform: none;
+}
+
+#main div {
+    margin-top: 300px;
+    color: var(--color-white);
+}
+
+.bg {
+    background-image: url('/images/bg.png');
+}
+
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.slide .list>li:lang(ru)::before {
+    color: red;
+    content: ''
+}
+
+code {
+    color:rgb(42, 229, 235)
+}
+code span {
+    color: var(--color-white);
+}
+
+.slide pre code {
+    margin-left: -300px;
+    padding: 0;
+}
+
+.required {
+    color: red;
+}
+
+.slide  .aria {
+    margin-left: -150px;
+    font-size: 17px;
+}
+
+.example {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    bottom: -62px;
+    right: 40px;
+}
+
+.slide .example>li:lang(ru)::before {
+    color: red;
+    content: ''
+}
+.attr {
+    color:rgb(142, 142, 189)
+}
+
+.slide.bg-title {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 70%;
+}
+
+.bg-title {
+    background-image: url('/images/title-bg.jpg');
+    /* background-position-y: 70%; */
+}
+
+.slide .last-slide {
+    margin: 136px 20px;
+}
+
+.form-title {
+    width: 150px;
+    height: 92px;
+    position: absolute;
+    bottom: 148px;
+    right: 183px;
+    transform: rotate(
+13deg
+);
+}
+
+.slide .author-title {
+    margin-top: 400px;
+    margin-left: 500px;
+    background: linear-gradient(to right, #000046, #1CB5E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
