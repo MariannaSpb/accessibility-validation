@@ -275,7 +275,7 @@ ul li {
 }
 
 .bg {
-    background-image: url('/images/bg.png');
+    background-image: url('images/bg.png');
 }
 
 
@@ -338,7 +338,7 @@ code span {
 }
 
 .bg-title {
-    background-image: url('/images/title-bg.jpg');
+    background-image: url('images/title-bg.jpg');
     /* background-position-y: 70%; */
 }
 
