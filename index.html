@@ -115,14 +115,14 @@
     <section class="slide">
         <h2 class="center">screen readers</h2>
         <hr>
-        <video src="images/Sr.mov" width="800"  loop muted autoplay></video>
+       <div class="description">
+        <img src="images/screen-readers.jpg" width="800" height="300" alt="screen reader">
+       </div>
     </section>
     <section class="slide">
         <h2 class="center">screen readers</h2>
         <hr>
-       <div class="description">
-        <img src="images/screen-readers.jpg" width="800" height="300" alt="screen reader">
-       </div>
+        <video src="images/Sr.mov" width="800"  loop muted autoplay></video>
     </section>
     <section class="slide">
         <h2 style="margin-top: 0" class="center">Форма&nbsp;&mdash; важная часть приложения</h2>
@@ -235,9 +235,9 @@
         <pre style="font-size: 0.8em; height: 150px;">
             <code class="aria">
                 &lt;fieldset&gt;
-                    &lt;label <span class="attr">for=</span>"email" <span class="attr">id=</span>"email-label"&gt;<span>Email (required)</span>&lt;/label&gt;
-                    &lt;input <span class="attr">type=</span>"email" <span class="attr">id=</span>"email" <span class="attr">required</span>/&gt;
-                    &lt;div <span class="required">aria-live=</span><span>"polite"</span> <span class="required">aria-describedby=<span>"email-label"</span></span> tabindex="0"&gt; 
+                    &lt;label <span class="attr">for=</span>"email"<span>Email (required)</span>&lt;/label&gt;
+                    &lt;input <span class="attr">type=</span>"email" <span class="attr">id=</span>"email" <span class="required">aria-describedby=</span>"email-error"<span class="attr">required</span>/&gt;
+                    &lt;div <span class="required">aria-live=</span>"polite"</span><span class="attr"> id=</span>"email-error" tabindex="0"&gt; 
                         <span>Please enter a valid email address.</span>
                     &lt;/div&gt;
                 &lt;/fieldset&gt;
