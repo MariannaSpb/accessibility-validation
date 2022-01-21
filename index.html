@@ -27,16 +27,19 @@
             </figure>
 
             <div class="about">
-                <p>Software engineer в компании EPAM</p>
+                <p>Software engineer в EPAM</p>
                 <p> Accessibility driven developer</p>
-                <p>город: Санкт-Петербург</p>
-                <p>Twitter: <a class="contact" href="https://twitter.com/MARY_CHERRY_PIE" target="_blank">@MARY_CHERRY_PIE</a>
+                <p>Санкт-Петербург</p>
+                <p class="social">
+                    <img class="social-icon" src="https://img.icons8.com/color/50/000000/twitter--v1.png"/> 
+                    <span>Twitter:</span> <a class="contact" href="https://twitter.com/MARY_CHERRY_PIE" target="_blank">@MARY_CHERRY_PIE</a>
                 </p>
+                <!-- <p><span>Twitter:</span> <a class="contact" href="https://twitter.com/MARY_CHERRY_PIE" target="_blank">@MARY_CHERRY_PIE</a> </p>-->
             </div>
         </div>
     </section>
     <section class="slide">
-        <h2>О чём будем говорить:</h2>
+        <h2>О чём будем говорить</h2>
         <ul>
         <li class="next">Что такое доступность</li>
         <li class="next">Кто в команде отвечает за поддержку доступности</li>
@@ -47,7 +50,7 @@
     <section class="slide bg">
     </section>
     <section class="slide">
-        <h2 class="center">Временные ситуации недоступности:</h2> 
+        <h2 class="center">Временные ситуации недоступности</h2> 
         <hr>
         <div class="description">
             <img src="images/keyboard-2.png"  width="700" alt="доступ с клавиатуры" height="400">
@@ -58,14 +61,16 @@
         </div>                
     </section>
     <section class="slide">
-        <h2 class="center">Временные ситуации недоступности:</h2> 
+        <h2 class="center">Временные ситуации недоступности</h2> 
         <hr>
         <div class="description">
-           <img src="images/contrast.png"  width="700" alt="незрячий" height="200" alt="плохой контраст">
+           <!-- <img src="images/contrast.png"  width="700" alt="незрячий" height="200" alt="плохой контраст"> -->
+           <img src="images/contrast_negate.png"  width="800" alt="незрячий" height="250" alt="плохой контраст">
+
         </div>                
     </section>
     <section class="slide">
-        <h2 class="center">Временные ситуации недоступности:</h2> 
+        <h2 class="center">Временные ситуации недоступности</h2> 
         <hr>
         <div class="description">
            <img src="images/desktop.jpg"  width="280" alt="незрячий" height="380" alt="плохой контраст">
@@ -109,8 +114,25 @@
         <h2 class="center">Кто участвует в поддержке доступности?</h2>
         <hr>
         <div class="description">
-            <img src="images/team.png"  width="700" height="350" alt="когнитивные нарушения">
+            <img src="images/team-1.png"  width="700" height="400" alt="когнитивные нарушения">
         </div>
+    </section>
+    <section class="slide">
+        <h2 class="center">Кто участвует в поддержке доступности?</h2>
+        <hr>
+        <div class="description">
+            <img src="images/team-2.png"  width="700" height="350" alt="когнитивные нарушения">
+        </div>
+    </section>
+    <section class="slide">
+        <h2 class="center">screen readers</h2>
+        <hr>
+       <div class="flex" style="margin: 0 auto; width: 600px; flex-wrap: wrap;">
+        <img style="margin-bottom: 20px;" src="images/wd.png" width="280" height="170" alt="screen reader">
+        <img src="images/apple.png" width="280" height="170" alt="screen reader">
+        <img src="images/wsr.png" width="280" height="170" alt="screen reader">
+        <img src="images/vo.png" width="280" height="170" alt="screen reader">
+       </div>
     </section>
     <section class="slide">
         <h2 class="center">screen readers</h2>
@@ -119,6 +141,17 @@
         <img src="images/screen-readers.jpg" width="800" height="300" alt="screen reader">
        </div>
     </section>
+    <!-- <section class="slide sr-bg">
+        <h2 class="center">screen readers</h2>
+     
+        <div class="spotlight-effect"></div>
+        <div class="light"></div>
+    </section> -->
+    <!-- <section class="slide sr-bg">
+        <h2 class="center">screen readers</h2>
+        <div class="spotlight-effect-1"></div>
+        <div class="light-1"></div>
+    </section> -->
     <section class="slide">
         <h2 class="center">screen readers</h2>
         <hr>
@@ -135,27 +168,32 @@
     </section>
     <section class="slide">
         <h2 class="center">Обязательные поля*</h2>
-        <p class="center" style="margin-top: 20px; text-align: center;">фёрст нейм стар</p>
+        <hr>
         <div class="description">
             <img src="images/star-form.png" width="800" alt="форма">
+            <p class="absolute"><img style="margin-top: 17px" src="images/horror.png" width="100" height="100" alt="форма с отключеной кнопкой"></p>
+
         </div>
+        <p class="center" style="margin-top: 20px; text-align: center;">фёрст нейм стар</p>
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение №1:</span>добавить явную подпись</h2>
         <hr>
         <div class="description">
             <img src="images/required-field.png" width="900" alt="форма">
+            <img class="absolute" style="margin-top: 17px; right: 10px; bottom: 20px;" src="images/emoji-ok.png" width="100" height="100" alt="значок плохо">
         </div>
     </section>
     <section class="slide">
-        <h2> <span class="solution">Решение №2:</span>добавить атрибут required в разметке</h2>
+        <h2> <span class="solution">Решение №2:</span> атрибут required в разметке</h2>
         <hr>
         <pre style="font-size: 0.8em;">
             <code>
                 &lt;label <span class="attr">for=</span>”first-name”&gt;<span>First Name</span>&lt;/label&gt;
-                &lt;input <span class="attr">type=</span>”text”id=”first-name” <span class="attr">name=</span>”first-name” <span class="required">required</span>&gt;
+                &lt;input <span class="attr">type=</span>”text” id=”first-name” <span class="attr">name=</span>”first-name” <span class="required">required</span>&gt;
             </code>
         </pre>
+        <img class="absolute" style="margin-top: 17px; right: 100px; bottom: 80px;" src="images/emoji-ok.png" width="100" height="100" alt="значок плохо">
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение №3:</span>использовать ARIA
@@ -165,15 +203,17 @@
             <code class="aria">
                 &lt;div <span class="attr">class=</span>"control"&gt;
                     &lt;label <span class="attr">for=</span>”name”&gt;<span>Full Name</span> &lt;span <span class="required">aria-hidden=</span>"true"&gt;<span>*</span>&lt;/span&gt;&lt;/label&gt;
-                    &lt;input <span class="attr">aria-describedby=</span>"required-descriprion" <span class="attr">type=</span>”text” <span class="attr">id=</span>”name” <span class="required">required</span>/&gt;
+                    &lt;input <span class="attr">type=</span>”text” <span class="attr">id=</span>”name” <span class="required">required</span>&gt;
                 &lt;/div&gt;
             </code>
         </pre>
         <img src="images/star-form.png" width="550" height="180" alt="форма">
-        <p class="small">Accessible Rich Internet Applications или ARIA — это стандарт, состоящий из набора специальных ролей и атрибутов, которые добавляются в разметку и расширяют или дополняют функции стандартных HTML-элементов.</p>
+        <img class="absolute" style="margin-top: 17px; right: 100px; bottom: 80px;" src="images/emoji-ok.png" width="100" height="100" alt="значок плохо">
+        <!-- <p class="small">Accessible Rich Internet Applications или ARIA — это стандарт, состоящий из набора специальных ролей и атрибутов, которые добавляются в разметку и расширяют или дополняют функции стандартных HTML-элементов.</p> -->
     </section>
     <section class="slide">
         <h2 style="margin-bottom: 50px" class="center">Placeholder — не замена лейблу</h2>
+        <hr>
         <video src="images/placeholder-2.mov" width="800"  loop muted autoplay></video>
     </section>
     <section class="slide">
@@ -181,16 +221,25 @@
         <hr>
         <div class="description">
             <img style="margin-left: 150px;" src="images/visible-label.png" width="800" height="400" alt="форма с подписями к полям">
+            <img class="absolute" style="margin-top: 17px; right: 50px; bottom: 76px;" src="images/emoji-ok.png" width="100" height="100" alt="значок плохо">
+
         </div>
     </section>
     <section class="slide">
         <h2 style="margin-bottom: 50px" class="center">Отключенные кнопки</h2>
+        <hr>
+        <pre style="font-size: 0.8em;">
+            <code class="btn" style="margin-left: -100px; line-height: 1;">
+                &lt;button <span class="btn-attr">disabled</span>&gt; <span>Button</span> <span></span>&lt;/button&gt;
+            </code>
+        </pre>
         <button class="disabled description" disabled>
             BUTTON
         </button>
     </section>
     <section class="slide">
         <h2 class="center" style="margin-bottom: 50px">Отключенные кнопки</h2>
+        <hr>
         <ul class="example description">
             <li><img style="margin-top: 17px" src="images/postbank.png" width="700" height="300" alt="форма с отключеной кнопкой"></li>
             <li class="absolute"><img style="margin-top: 17px" src="images/horror.png" width="100" height="100" alt="форма с отключеной кнопкой"></li>
@@ -198,6 +247,7 @@
     </section>
     <section class="slide">
         <h2 class="center" style="margin-bottom: 50px">Отключенные кнопки</h2>
+        <hr>
           <div class="description flex example">
             <img style="margin-top: 17px" src="images/disabled.png" width="400" height="300" alt="форма с отключеной кнопкой">
             <img style="margin-top: 110px" src="images/red-arrow.png" width="100" height="100" alt="стрелка вправо">
@@ -208,7 +258,9 @@
     <section class="slide">
         <h2> <span class="solution">Решение №1:</span>не отключать кнопки</h2>
         <hr>
-        <video src="images/ebay.mov" width="800"  loop muted autoplay></video>
+        <video src="images/ebay.mov" width="800" style="position: relative;" loop muted autoplay></video>
+        <img class="absolute" style="margin-top: 17px; right: 85px; bottom: 76px;" src="images/emoji-ok.png" width="100" height="100" alt="значок плохо">
+
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение №2:</span>добавить подсказку</h2>
@@ -235,33 +287,37 @@
         <pre style="font-size: 0.8em; height: 150px;">
             <code class="aria">
                 &lt;fieldset&gt;
-                    &lt;label <span class="attr">for=</span>"email"<span>Email (required)</span>&lt;/label&gt;
-                    &lt;input <span class="attr">type=</span>"email" <span class="attr">id=</span>"email" <span class="required">aria-describedby=</span>"email-error"<span class="attr">required</span>/&gt;
-                    &lt;div <span class="required">aria-live=</span>"polite"</span><span class="attr"> id=</span>"email-error" tabindex="0"&gt; 
+                    &lt;label <span class="attr">for=</span>"email"&gt;<span>Email (required)</span>&lt;/label&gt;
+                    &lt;input <span class="attr">type=</span>"email" <span class="attr">id=</span>"email" <span class="required">aria-describedby=</span>"email-error" <span class="attr">required</span>/&gt;
+                    &lt;div <span class="required">aria-live=</span>"polite"</span><span class="attr"> id=</span>"email-error" &gt; 
                         <span>Please enter a valid email address.</span>
                     &lt;/div&gt;
                 &lt;/fieldset&gt;
             </code>
         </pre>
+        <img class="absolute" style="margin-top: 17px; right: 50px; bottom: 76px;" src="images/emoji-ok.png" width="100" height="100" alt="значок плохо">
     </section>
     <section class="slide">
         <h2> <span class="solution">Решение:</span> </h2>
         <hr>
         <div class="description">
-            <img src="images/sr-status copy.png" width="800" height="400" alt="форма с подписями к полям">
+            <img src="images/sr-status copy.png" width="750" height="350" alt="форма с подписями к полям">
         </div>
     </section>
     <section class="slide">
-        <h2> Подведём итоги: </h2>
+        <h2> Подведём итоги </h2>
         <ul>
-            <li class="next">Звёздочка - не единственный указатель на обязательное поле</li>
-            <li class="next">Плейсхолдер не замена лейблу</li>
+            <li class="next">Звёздочка &nbsp;&mdash; не единственный указатель на обязательное поле</li>
+            <li class="next">Добавляйте лейблы</li>
             <li class="next">Отключайте кнопки доступно</li>
-            <li class="next">live region для оповещения об ошибках</li>
+            <li class="next">Оповещайте пользователей скринридеров об изменениях</li>
+            <!-- live region для оповещения об ошибках -->
         </ul>
     </section>
     <section class="slide winner">
-        <h2>Поздравляю! <br> Теперь ваша форма доступна!</h2>
+        <h2>Поздравляю! 
+            <!-- <br> Теперь ваша форма доступна! -->
+        </h2>
         <div class="description top">
             <img src="images/download.png" width="300" height="300" alt="форма авторизации">
         </div>

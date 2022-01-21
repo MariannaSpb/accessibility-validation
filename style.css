@@ -75,10 +75,9 @@ ul li {
     margin-bottom: 20px;
     font-size: 48px;
     font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
     color: var(--color-white);
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .content img {
@@ -109,6 +108,7 @@ ul li {
 .description {
     margin: 0 auto;
     text-align: center;
+    position: relative;
 }
 
 .description a {
@@ -126,6 +126,19 @@ ul li {
 
 .slide::after {
     left: 950px;
+    right: 0;
+    height: auto;
+    width: calc(var(--ribbon-size) * 1.5);
+    color: white;
+    background-image: linear-gradient(
+45deg
+, transparent 0 7px, #008F00 27px);
+    background-repeat: no-repeat;
+    margin-top: 1em;
+    padding-right: 0.5em;
+    padding-left: 0.9em;
+    padding-top: 0;
+    font-size: 24px;
 }
 
 /* 
@@ -179,6 +192,11 @@ ul li {
 .about {
     color:var(--color-white);
 }
+
+.about span {
+    color: lightgrey;
+}
+
 .slide .contact {
     background: -webkit-linear-gradient(
      90deg,#7474bf 0%,#348ac7 100%);
@@ -243,7 +261,7 @@ ul li {
 
 .solution {
     margin-right: 15px;
-    color: var(--color-red);
+    color: #00BF00;
 }
 
 .disabled {
@@ -254,7 +272,7 @@ ul li {
     background: #d2d2d2;
     border: 3px solid darkgrey;
     font-size: 48px;
-    margin-top: 150px;
+    /* margin-top: 100px; */
     width: 600px;
 }
 
@@ -276,6 +294,13 @@ ul li {
 
 .bg {
     background-image: url('images/bg.png');
+}
+
+.sr-bg {
+    background-image: url('images/screen-readers.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 
@@ -334,7 +359,7 @@ code span {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-position-y: 70%;
+    background-position-y: 100%;
 }
 
 .bg-title {
@@ -350,17 +375,87 @@ code span {
     width: 150px;
     height: 92px;
     position: absolute;
-    bottom: 148px;
-    right: 183px;
+    bottom: 214px;
+    right: 188px;
     transform: rotate(
 13deg
 );
 }
 
 .slide .author-title {
-    margin-top: 400px;
+    margin-top: 276px;
     margin-left: 500px;
     background: linear-gradient(to right, #000046, #1CB5E0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.slide .social-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: -10px;
+}
+
+hr {
+    background-color: darkgray;
+    opacity: 0.3;
+    /* margin: 0; */
+}
+
+.spotlight-effect {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(
+        circle,
+        transparent 160px,
+        rgba(0, 0, 0, 0.85) 250px
+    );
+    right: 232px;
+    top: 10px;
+}
+
+.light {
+    position: absolute;
+    width: 350px;
+    height: 363px;
+    opacity: 1;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.85);
+    top: 103px;
+}
+
+.spotlight-effect-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(
+        circle,
+        transparent 160px,
+        rgba(0, 0, 0, 0.85) 250px
+    );
+    right: 150px;
+    top: 10px;
+}
+
+.light-1 {
+    position: absolute;
+    width: 350px;
+    height: 363px;
+    opacity: 1;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.85);
+    top: 103px;
+}
+
+/* .slide pre code {
+    line-height: 1;
+} */
+
+.btn {
+    color: grey;
+}
+
+.btn-attr {
+    color: red;
 }
