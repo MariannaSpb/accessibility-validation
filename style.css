@@ -212,6 +212,7 @@ ul li {
 
 .slide .header {
     color: var(--color-white);
+    margin-bottom: 53px;
 }
 
 .code-img {
