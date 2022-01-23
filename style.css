@@ -460,3 +460,17 @@ hr {
 .btn-attr {
     color: red;
 }
+
+.sr-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px !important;
+}
+
+.sr-container {
+    display: flex;
+    align-items: baseline;
+}
+.item:not(:last-child) {
+    margin-right: 150px;
+}
